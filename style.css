@@ -1,0 +1,25 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #bcbaba;
+}
+
+main {
+    margin: 20px
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid black 1px;
+    margin-bottom: 5px;
+    background-color: #484848;
+}
+
+main div h2{
+    margin: 0;
+}
+
+.pink {
+    color: #D0A3BF;
+}
