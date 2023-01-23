@@ -1,6 +1,9 @@
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #bcbaba;
+}
+
+h1{
+    color: #5c5c5c;
 }
 
 main {
@@ -11,15 +14,111 @@ main div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid black 1px;
+    border: solid #5c5c5c 1px;
     margin-bottom: 5px;
-    background-color: #484848;
+    background-color: #5c5c5c;
+    padding: 5px;
 }
 
-main div h2{
+main h2{
     margin: 0;
 }
 
-.pink {
-    color: #D0A3BF;
+main p{
+    margin-left: 10px;
+}
+
+main a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Pink color layout */
+.pink h2{
+    color: #d97aac;
+}
+
+.pink p{
+    color: #cbb4c1;
+}
+
+.pink{
+    background-color: #cbb4c1;
+}
+
+/* Blue */
+.blue h2{
+    color: #5888b1;
+}
+
+.blue p{
+    color: #9ab4bf;
+}
+
+.blue{
+    background-color: #9ab4bf;
+}
+
+/* Green */
+.green h2{
+    color: #679c51;
+}
+
+.green p{
+    color: #9ab095;
+}
+
+.green{
+    background-color: #9ab095;
+}
+
+/* Purple */
+.purple h2{
+    color: #9e63a4;
+}
+
+.purple p{
+    color: #aa93ad;
+}
+
+.purple{
+    background-color: #aa93ad;
+}
+
+/* orange */
+.orange h2{
+    color: #d28f51;
+}
+
+.orange p{
+    color: #d6c3bb;
+}
+
+.orange{
+    background-color: #d6c3bb;
+}
+
+/* red */
+.red h2{
+    color: #aa3d3d;
+}
+
+.red p{
+    color: #b98d8d;
+}
+
+.red{
+    background-color: #b98d8d;
+}
+/* white */
+.white h2{
+    color: #ffffff;
+}
+
+.white p{
+    color: #b6b1b1;
+}
+
+.white{
+    background-color: #b6b1b1;
 }

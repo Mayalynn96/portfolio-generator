@@ -30,6 +30,12 @@ inquirer.prompt([
         type: "input",
         name: "email",
         message: "What is your email address?"
+    },
+    {
+        type: "list",
+        name: "color",
+        message: "Choose one of the folloring colors for your portfolio theme!",
+        choices: ["pink", "blue", "green", "purple", "orange", "red", "white"]
     }
 ]).then ((data) => {
     const filledFormText = `
@@ -42,13 +48,13 @@ inquirer.prompt([
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
-<body>
+<body class="${data.color}">
     <header>
         <h1>Welcome to ${data.username}'s Portfolio!</h1>
     </header>
     <main>
         <div>
-            <h2>Education</h2>
+            <h2>Relevant education</h2>
             <p>${data.education}</p>
         </div>
         <div>
@@ -60,7 +66,7 @@ inquirer.prompt([
             <p>${data.funFact}</p>
         </div>
         <div>
-            <h2>See my previous work!</h2>
+            <h2>My GitHuhb profile</h2>
             <p><a href="https://github.com/${data.githubUsername}" target="_blank">${data.githubUsername}</a></p>
         </div>
         <div>
